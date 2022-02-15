@@ -3,13 +3,14 @@ import Tours from "../tours/Tours";
 import Footer from "../footer/Footer";
 import appsData from "../../data/db.json"
 
-function Home(){
+function Home(props){
    // console.log(appsData);
 return(
 <>
+
 < Header/>
 
-<Tours appsData={appsData}  />
+<Tours appsData={props.appsData}  />
 <Footer/>
 
 </>
